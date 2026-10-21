@@ -1,0 +1,34 @@
+﻿<Window x:Class="pz3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="/Resources/cat_13469.ico">
+    <Grid Background="#FFE9CACA">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="722*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Height="60"
+           VerticalAlignment="Top"
+           Background="#A18594" Grid.ColumnSpan="4">
+
+            <Button
+             x:Name="btnBack"
+             Content="Назад"
+             Width="100"
+             Height="35"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center"
+             Margin="0,0,10,0"
+             Click="btnBack_Click"/>
+
+            <Image Width="45" Height="45" HorizontalAlignment="Left" Margin="5" Source="Resources/58298a1770d02c1936c28a58bcc97340.jpg"/>
+            <Frame x:Name="FrmMain" Margin="0,58,0,-380" NavigationUIVisibility="Hidden" ContentRendered="FrmMain_ContentRendered"/>
+        </Grid>
+    </Grid>
+</Window>
